@@ -6,16 +6,14 @@ namespace Unity.FPS.Gameplay
     [RequireComponent(typeof(Rigidbody), typeof(Collider))]
     public class Pickup : MonoBehaviour
     {
-        [Tooltip("Frequency at which the item will move up and down")]
         public float VerticalBobFrequency = 1f;
 
-        [Tooltip("Distance the item will move up and down")]
         public float BobbingAmount = 1f;
 
-        [Tooltip("Rotation angle per second")] public float RotatingSpeed = 360f;
+        public float RotatingSpeed = 360f;
 
-        [Tooltip("Sound played on pickup")] public AudioClip PickupSfx;
-        [Tooltip("VFX spawned on pickup")] public GameObject PickupVfxPrefab;
+        public AudioClip PickupSfx;
+        public GameObject PickupVfxPrefab;
 
         public Rigidbody PickupRigidbody { get; private set; }
 

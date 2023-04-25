@@ -19,23 +19,22 @@ namespace Unity.FPS.Gameplay
             }
         }
 
-        [Header("Visual")] [Tooltip("The VFX to scale the spawn rate based on the ammo ratio")]
+        [Header("Visual")] 
         public ParticleSystem SteamVfx;
 
-        [Tooltip("The emission rate for the effect when fully overheated")]
         public float SteamVfxEmissionRateMax = 8f;
 
         //Set gradient field to HDR
-        [GradientUsage(true)] [Tooltip("Overheat color based on ammo ratio")]
+        [GradientUsage(true)] 
         public Gradient OverheatGradient;
 
-        [Tooltip("The material for overheating color animation")]
+        
         public Material OverheatingMaterial;
 
-        [Header("Sound")] [Tooltip("Sound played when a cell are cooling")]
+        [Header("Sound")] 
         public AudioClip CoolingCellsSound;
 
-        [Tooltip("Curve for ammo to volume ratio")]
+        
         public AnimationCurve AmmoToVolumeRatioCurve;
 
 

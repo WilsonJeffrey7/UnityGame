@@ -5,7 +5,6 @@ namespace Unity.FPS.Gameplay
 {
     public class WeaponPickup : Pickup
     {
-        [Tooltip("The prefab for the weapon that will be added to the player on pickup")]
         public WeaponController WeaponPrefab;
 
         protected override void Start()

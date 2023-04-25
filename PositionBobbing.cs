@@ -5,10 +5,8 @@ namespace Unity.FPS.Gameplay
 {
     public class PositionBobbing : MonoBehaviour
     {
-        [Tooltip("Frequency at which the item will move up and down")]
         public float VerticalBobFrequency = 1f;
 
-        [Tooltip("Distance the item will move up and down")]
         public float BobbingAmount = 0.5f;
 
         Vector3 m_StartPosition;
